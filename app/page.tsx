@@ -57,7 +57,10 @@ export default function Home() {
 
         <div className="hero-content">
           <p className="eyebrow"><span /> Criador de conteúdo gamer</p>
-          <h1>Jogar é só<br />o começo.</h1>
+          <h1>
+            <span>Jogar é só</span>
+            <span>o começo.</span>
+          </h1>
           <p className="hero-copy">
             Gameplay, reviews e lives com opinião de verdade — um espaço para quem vive games dentro e fora da tela.
           </p>
