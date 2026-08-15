@@ -229,6 +229,16 @@ h2 { margin: 0; font-size: clamp(42px, 5.2vw, 72px); line-height: .98; letter-sp
 .link-name strong { font-size: 16px; }
 .link-name small { color: #72788f; font-size: 11px; }
 .link-arrow { color: var(--pink); font-size: 20px; }
+.business-section { padding-block: clamp(88px, 11vw, 150px); display: grid; grid-template-columns: .78fr 1.22fr; gap: clamp(60px, 10vw, 140px); border-top: 1px solid rgba(255,255,255,.1); }
+.business-intro h2 { max-width: 590px; }
+.business-card { position: relative; align-self: end; padding: clamp(28px, 4vw, 52px); overflow: hidden; border: 1px solid rgba(0,200,255,.28); background: linear-gradient(135deg, rgba(0,200,255,.1), rgba(255,43,214,.07) 70%), #090c20; box-shadow: inset 0 0 35px rgba(0,200,255,.05); }
+.business-card::before { content: ""; position: absolute; top: 0; left: 0; width: 35%; height: 2px; background: linear-gradient(90deg, var(--pink), var(--blue)); box-shadow: 0 0 18px var(--pink); }
+.business-card p { max-width: 570px; margin: 0; color: #d9dcef; font-size: clamp(17px, 2vw, 22px); line-height: 1.45; }
+.business-email { margin-top: 34px; padding-top: 18px; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 9px 22px; border-top: 1px solid rgba(255,255,255,.16); transition: color .25s ease, border-color .25s ease; }
+.business-email-label { grid-column: 1 / -1; color: var(--blue); font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.business-email strong { min-width: 0; color: #fff; font-size: clamp(17px, 2.2vw, 25px); letter-spacing: -.03em; overflow-wrap: anywhere; }
+.business-email > span:last-child { color: var(--pink); font-size: 23px; }
+.business-email:hover strong, .business-email:focus-visible strong { color: var(--blue); }
 footer { position: relative; overflow: hidden; background: #07091a; border-top: 1px solid rgba(255,255,255,.09); }
 .footer-glow { position: absolute; left: 50%; top: 15%; width: 55vw; height: 55vw; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(circle, rgba(0,200,255,.09), transparent 62%); }
 .footer-inner { position: relative; padding-top: clamp(100px, 13vw, 170px); text-align: center; }
@@ -244,7 +254,7 @@ footer { position: relative; overflow: hidden; background: #07091a; border-top: 
 
 @media (max-width: 900px) {
   .header-cta { display: none; }
-  .about-grid, .link-section { grid-template-columns: 1fr; }
+  .about-grid, .link-section, .business-section { grid-template-columns: 1fr; }
   .about-grid { max-width: 700px; margin-inline: auto; }
   .portrait-wrap { max-width: 480px; }
   .section-heading { grid-template-columns: 1fr; }

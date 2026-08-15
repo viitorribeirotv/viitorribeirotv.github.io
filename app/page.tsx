@@ -49,6 +49,7 @@ export default function Home() {
             <a href="#sobre">Sobre</a>
             <a href="#conteudo">Conteúdo</a>
             <a href="#links">Links</a>
+            <a href="#parcerias">Parcerias</a>
           </nav>
           <a className="header-cta" href="https://linktr.ee/viitorribeirotv" target="_blank" rel="noreferrer">
             Todos os links <span aria-hidden="true">↗</span>
@@ -153,6 +154,23 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="business-section section-shell" id="parcerias">
+        <div className="business-intro">
+          <div className="section-label"><span>04</span> Parcerias e trabalhos</div>
+          <p className="kicker">Vamos conversar?</p>
+          <h2>Seu projeto pode ganhar uma nova fase.</h2>
+        </div>
+        <div className="business-card">
+          <p>
+            Estou aberto a parcerias, campanhas, publis, criação de conteúdo e projetos ligados a games e tecnologia.
+          </p>
+          <a className="business-email" href="mailto:vitor.a.trevisani@gmail.com?subject=Parceria%20profissional%20-%20viitorribeirotv">
+            <span className="business-email-label">Contato profissional</span>
+            <strong>vitor.a.trevisani@gmail.com</strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
       <footer>
         <div className="footer-glow" aria-hidden="true" />
         <div className="section-shell footer-inner">

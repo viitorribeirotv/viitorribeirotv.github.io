@@ -38,6 +38,9 @@ test("renderiza o site pessoal completo", async () => {
   assert.match(html, /https:\/\/livepix\.gg\/viitorribeirotv/);
   assert.match(html, /Apoie a live/);
   assert.doesNotMatch(html, /https:\/\/github\.com\/viitorribeirotv/);
+  assert.match(html, /Parcerias e trabalhos/);
+  assert.match(html, /mailto:vitor\.a\.trevisani@gmail\.com/);
+  assert.match(html, /vitor\.a\.trevisani@gmail\.com/);
   assert.match(html, /https:\/\/viitorribeirotv\.github\.io\/og\.png/);
   assert.match(html, /href="\/favicon\.ico"/);
   assert.match(html, /href="\/favicon\.png"/);
