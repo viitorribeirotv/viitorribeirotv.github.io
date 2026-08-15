@@ -36,5 +36,8 @@ test("renderiza o site pessoal completo", async () => {
   assert.match(html, /https:\/\/youtube\.com\/@viitorribeirotv\?sub_confirmation=1/);
   assert.match(html, /https:\/\/discord\.gg\/xHYPKqxTTW/);
   assert.match(html, /https:\/\/viitorribeirotv\.github\.io\/og\.png/);
+  assert.match(html, /href="\/favicon\.ico"/);
+  assert.match(html, /href="\/favicon\.png"/);
+  assert.match(html, /href="\/apple-touch-icon\.png"/);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|Your site is taking shape/i);
 });
