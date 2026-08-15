@@ -35,6 +35,9 @@ test("renderiza o site pessoal completo", async () => {
   assert.match(html, /Conteúdo para cada momento/);
   assert.match(html, /https:\/\/youtube\.com\/@viitorribeirotv\?sub_confirmation=1/);
   assert.match(html, /https:\/\/discord\.gg\/xHYPKqxTTW/);
+  assert.match(html, /https:\/\/livepix\.gg\/viitorribeirotv/);
+  assert.match(html, /Apoie a live/);
+  assert.doesNotMatch(html, /https:\/\/github\.com\/viitorribeirotv/);
   assert.match(html, /https:\/\/viitorribeirotv\.github\.io\/og\.png/);
   assert.match(html, /href="\/favicon\.ico"/);
   assert.match(html, /href="\/favicon\.png"/);

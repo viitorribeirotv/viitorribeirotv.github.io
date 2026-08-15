@@ -32,7 +32,7 @@ const allLinks = [
   { short: "IG", label: "Instagram", detail: "Bastidores e novidades", href: "https://www.instagram.com/viitorribeirotv" },
   { short: "TT", label: "TikTok", detail: "Cortes e momentos", href: "https://www.tiktok.com/@viitorribeirotv" },
   { short: "DS", label: "Discord", detail: "Entre para a comunidade", href: "https://discord.gg/xHYPKqxTTW" },
-  { short: "GH", label: "GitHub", detail: "Projetos e código", href: "https://github.com/viitorribeirotv" },
+  { short: "LP", label: "Apoie a live", detail: "Contribua pelo LivePix", href: "https://livepix.gg/viitorribeirotv" },
   { short: "LT", label: "Linktree", detail: "Todos os caminhos", href: "https://linktr.ee/viitorribeirotv" },
 ];
 
