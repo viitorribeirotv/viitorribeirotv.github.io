@@ -33,7 +33,7 @@ test("renderiza o site pessoal completo", async () => {
   assert.match(html, /Jogar é só/);
   assert.match(html, /Prazer, eu sou o Vitor/);
   assert.match(html, /Conteúdo para cada momento/);
-  assert.match(html, /https:\/\/www\.youtube\.com\/@viitorribeirotv/);
+  assert.match(html, /https:\/\/youtube\.com\/@viitorribeirotv\?sub_confirmation=1/);
   assert.match(html, /https:\/\/discord\.gg\/xHYPKqxTTW/);
   assert.match(html, /https:\/\/viitorribeirotv\.github\.io\/og\.png/);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|Your site is taking shape/i);

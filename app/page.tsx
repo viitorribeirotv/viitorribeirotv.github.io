@@ -4,7 +4,7 @@ const featuredChannels = [
     title: "YouTube",
     description: "Gameplays, análises, primeiras impressões e vídeos para assistir no seu ritmo.",
     detail: "Vídeos & reviews",
-    href: "https://www.youtube.com/@viitorribeirotv",
+    href: "https://youtube.com/@viitorribeirotv?sub_confirmation=1",
     className: "youtube",
   },
   {
@@ -26,7 +26,7 @@ const featuredChannels = [
 ];
 
 const allLinks = [
-  { short: "YT", label: "YouTube", detail: "Vídeos e reviews", href: "https://www.youtube.com/@viitorribeirotv" },
+  { short: "YT", label: "YouTube", detail: "Vídeos e reviews", href: "https://youtube.com/@viitorribeirotv?sub_confirmation=1" },
   { short: "TW", label: "Twitch", detail: "Lives e comunidade", href: "https://www.twitch.tv/viitorribeirotv" },
   { short: "K", label: "Kick", detail: "Transmissões ao vivo", href: "https://kick.com/viitorribeirotv" },
   { short: "IG", label: "Instagram", detail: "Bastidores e novidades", href: "https://www.instagram.com/viitorribeirotv" },
@@ -65,7 +65,7 @@ export default function Home() {
             Gameplay, reviews e lives com opinião de verdade — um espaço para quem vive games dentro e fora da tela.
           </p>
           <div className="hero-actions">
-            <a className="primary-action" href="https://www.youtube.com/@viitorribeirotv" target="_blank" rel="noreferrer">
+            <a className="primary-action" href="https://youtube.com/@viitorribeirotv?sub_confirmation=1" target="_blank" rel="noreferrer">
               Assistir no YouTube <span aria-hidden="true">↗</span>
             </a>
             <a className="text-action" href="#sobre">Conheça o Vitor <span aria-hidden="true">↓</span></a>
