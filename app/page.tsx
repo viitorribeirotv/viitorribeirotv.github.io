@@ -38,10 +38,8 @@ const allLinks = [
   { short: "TW", label: "Twitch", detail: "Lives e comunidade", href: "https://www.twitch.tv/viitorribeirotv" },
   { short: "K", label: "Kick", detail: "Transmissões ao vivo", href: "https://kick.com/viitorribeirotv" },
   { short: "IG", label: "Instagram", detail: "Bastidores e novidades", href: "https://www.instagram.com/viitorribeirotv" },
-  { short: "TT", label: "TikTok", detail: "Cortes e momentos", href: "https://www.tiktok.com/@viitorribeirotv" },
   { short: "DS", label: "Discord", detail: "Entre para a comunidade", href: "https://discord.gg/xHYPKqxTTW" },
   { short: "LP", label: "Apoie a live", detail: "Contribua pelo LivePix", href: "https://livepix.gg/viitorribeirotv" },
-  { short: "LT", label: "Linktree", detail: "Todos os caminhos", href: "https://linktr.ee/viitorribeirotv" },
 ];
 
 export default function Home() {
@@ -59,8 +57,8 @@ export default function Home() {
             <a href="#links">Links</a>
             <a href="#parcerias">Parcerias</a>
           </nav>
-          <a className="header-cta" href="https://linktr.ee/viitorribeirotv" target="_blank" rel="noreferrer">
-            Todos os links <span aria-hidden="true">↗</span>
+          <a className="header-cta" href="#links">
+            Ver canais <span aria-hidden="true">↘</span>
           </a>
         </header>
 
@@ -183,8 +181,8 @@ export default function Home() {
         <div className="footer-glow" aria-hidden="true" />
         <div className="section-shell footer-inner">
           <p className="footer-title">A próxima partida<br />começa agora<span>.</span></p>
-          <a className="primary-action" href="https://linktr.ee/viitorribeirotv" target="_blank" rel="noreferrer">
-            Vamos nessa <span aria-hidden="true">↗</span>
+          <a className="primary-action" href="#links">
+            Ver canais <span aria-hidden="true">↘</span>
           </a>
           <div className="footer-bottom">
             <a className="wordmark" href="#inicio"><span>viitorribeiro</span><strong>tv</strong></a>
