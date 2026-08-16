@@ -189,7 +189,7 @@ h2 { margin: 0; font-size: clamp(42px, 5.2vw, 72px); line-height: .98; letter-sp
 .content-section { padding-block: clamp(92px, 11vw, 150px); background: #07091a; border-block: 1px solid rgba(255,255,255,.08); }
 .section-heading { display: grid; grid-template-columns: .45fr 1fr; gap: 40px; align-items: end; }
 .section-heading h2 { max-width: 760px; }
-.channel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 62px; }
+.channel-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 62px; }
 .channel-card {
   position: relative;
   min-height: 440px;
@@ -208,7 +208,7 @@ h2 { margin: 0; font-size: clamp(42px, 5.2vw, 72px); line-height: .98; letter-sp
 .channel-card:hover::after { opacity: .42; }
 .youtube { --card-color: #ff365a; --card-glow: #ff1744; }
 .twitch { --card-color: #9f74ff; --card-glow: #7c3cff; }
-.kick { --card-color: #65f043; --card-glow: #3ee61a; }
+.kick { --card-color: #65f043; --card-glow: #3ee61a; } .instagram { --card-color: #ff69b4; --card-glow: #c13584; }
 .card-top { display: flex; justify-content: space-between; color: #6f758d; font-size: 11px; font-weight: 800; }
 .card-top span:last-child { color: var(--card-color); font-size: 20px; }
 .platform-mark { width: 62px; height: 62px; margin-top: 60px; display: grid; place-items: center; border: 1px solid color-mix(in srgb, var(--card-color) 68%, transparent); color: var(--card-color); font-size: 18px; font-weight: 900; box-shadow: 0 0 24px color-mix(in srgb, var(--card-color) 12%, transparent); }
