@@ -58,7 +58,7 @@ export default function Home() {
             <a href="#parcerias">Parcerias</a>
           </nav>
           <a className="header-cta" href="#links">
-            Ver canais <span aria-hidden="true">↘</span>
+            Todos os links <span aria-hidden="true">↗</span>
           </a>
         </header>
 

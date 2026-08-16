@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "viitorribeirotv | Gameplay, Reviews e Lives",
+  title: "viitorribeirotv",
   description: "O universo gamer de Vitor Ribeiro: gameplays, reviews, lives e conteúdo com opinião de verdade.",
   metadataBase: new URL("https://viitorribeirotv.github.io"),
   icons: {
