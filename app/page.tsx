@@ -142,14 +142,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="link-section section-shell" id="links">
+      <section className="link-section section-shell">
         <div className="link-intro">
           <div className="section-label"><span>03</span> Conecte-se</div>
           <p className="kicker">Todos os meus canais</p>
           <h2>Onde tem jogo,<br />eu estou por lá.</h2>
           <p className="link-copy">Siga, participe e escolha o seu lugar favorito para acompanhar o conteúdo.</p>
         </div>
-        <div className="link-list">
+        <div className="link-list" id="links">
           {allLinks.map((link) => (
             <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
               <span className="social-mark">{link.short}</span>
