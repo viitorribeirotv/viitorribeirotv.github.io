@@ -23,6 +23,14 @@ const featuredChannels = [
     href: "https://kick.com/viitorribeirotv",
     className: "kick",
   },
+  {
+    number: "04",
+    title: "Instagram",
+    description: "Bastidores, novidades e momentos do dia a dia para acompanhar de perto.",
+    detail: "Bastidores & novidades",
+    href: "https://www.instagram.com/viitorribeirotv",
+    className: "instagram",
+  },
 ];
 
 const allLinks = [
