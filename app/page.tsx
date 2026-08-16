@@ -107,10 +107,10 @@ export default function Home() {
             <h2>Games são histórias que a gente vive junto.</h2>
             <div className="copy-columns">
               <p>
-                Crio conteúdo para quem gosta de descobrir jogos, acompanhar cada partida e conversar sem roteiro engessado.
+                Tenho 32 anos e acompanho a evolução dos games desde a era dos pixels e dos consoles clássicos até a experiência atual no PC e no PS5. Em meio à rotina, encontrei nos jogos um espaço para relaxar, explorar novas histórias e compartilhar experiências — e foi dessa paixão que nasceu este canal.
               </p>
               <p>
-                Entre gameplays, reviews e transmissões ao vivo, compartilho experiências honestas e construo uma comunidade que joga junto.
+                Produzo gameplays de diferentes gêneros, reviews sinceras e análises com opinião própria, passando por grandes lançamentos, jogos de terror e clássicos da nostalgia retrô. Também converso sobre hardware e cultura gamer, sempre buscando criar um ponto de encontro para quem valoriza boas discussões, humor e uma comunidade próxima.
               </p>
             </div>
             <div className="signature">viitorribeiro<span>tv</span></div>
