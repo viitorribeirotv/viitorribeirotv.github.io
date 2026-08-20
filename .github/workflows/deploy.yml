@@ -35,6 +35,8 @@ jobs:
 
       - name: Gerar o site estático
         run: npm run build:pages
+        env:
+          NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ vars.GA_MEASUREMENT_ID }}
 
       - name: Configurar o GitHub Pages
         uses: actions/configure-pages@v5

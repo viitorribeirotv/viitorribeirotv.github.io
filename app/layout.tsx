@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import GoogleAnalytics from "./google-analytics";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "viitorribeirotv",
+  title: "viitorribeirotv | Gameplay, Reviews e Lives",
   description: "O universo gamer de Vitor Ribeiro: gameplays, reviews, lives e conteúdo com opinião de verdade.",
   metadataBase: new URL("https://viitorribeirotv.github.io"),
   icons: {
@@ -52,6 +53,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
       </body>
     </html>
   );

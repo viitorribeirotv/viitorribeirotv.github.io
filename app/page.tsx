@@ -72,7 +72,7 @@ export default function Home() {
             Gameplay, reviews e lives com opinião de verdade — um espaço para quem vive games dentro e fora da tela.
           </p>
           <div className="hero-actions">
-            <a className="primary-action" href="https://youtube.com/@viitorribeirotv?sub_confirmation=1" target="_blank" rel="noreferrer">
+            <a className="primary-action" href="https://youtube.com/@viitorribeirotv?sub_confirmation=1" target="_blank" rel="noreferrer" data-analytics-link="youtube" data-analytics-location="hero">
               Assistir no YouTube <span aria-hidden="true">↗</span>
             </a>
             <a className="text-action" href="#sobre">Conheça o Vitor <span aria-hidden="true">↓</span></a>
@@ -130,7 +130,7 @@ export default function Home() {
 
           <div className="channel-grid">
             {featuredChannels.map((channel) => (
-              <a className={`channel-card ${channel.className}`} key={channel.title} href={channel.href} target="_blank" rel="noreferrer">
+              <a className={`channel-card ${channel.className}`} key={channel.title} href={channel.href} target="_blank" rel="noreferrer" data-analytics-link={channel.title.toLowerCase()} data-analytics-location="destaques">
                 <div className="card-top"><span>{channel.number}</span><span aria-hidden="true">↗</span></div>
                 <div className="platform-mark">{channel.title.slice(0, 2).toUpperCase()}</div>
                 <h3>{channel.title}</h3>
@@ -151,7 +151,7 @@ export default function Home() {
         </div>
         <div className="link-list" id="links">
           {allLinks.map((link) => (
-            <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
+            <a key={link.label} href={link.href} target="_blank" rel="noreferrer" data-analytics-link={link.label.toLowerCase()} data-analytics-location="todos_os_links">
               <span className="social-mark">{link.short}</span>
               <span className="link-name"><strong>{link.label}</strong><small>{link.detail}</small></span>
               <span className="link-arrow" aria-hidden="true">↗</span>
@@ -170,7 +170,7 @@ export default function Home() {
           <p>
             Estou aberto a parcerias, campanhas, publis, criação de conteúdo e projetos ligados a games e tecnologia.
           </p>
-          <a className="business-email" href="mailto:vitor.a.trevisani@gmail.com?subject=Parceria%20profissional%20-%20viitorribeirotv">
+          <a className="business-email" href="mailto:vitor.a.trevisani@gmail.com?subject=Parceria%20profissional%20-%20viitorribeirotv" data-analytics-link="email_profissional" data-analytics-location="parcerias">
             <span className="business-email-label">Contato profissional</span>
             <strong>vitor.a.trevisani@gmail.com</strong>
             <span aria-hidden="true">↗</span>
