@@ -14,24 +14,12 @@ type GoogleAnalyticsProps = {
 };
 
 /**
- * Loads GA4 only when a measurement ID is configured and records meaningful
- * outbound clicks without changing the public interface.
+ * Records meaningful outbound clicks after the official GA4 snippet has been
+ * loaded by the root layout.
  */
 export default function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
   useEffect(() => {
     if (!measurementId || !measurementId.startsWith("G-")) return;
-
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
-    document.head.appendChild(script);
-
-    window.dataLayer = window.dataLayer ?? [];
-    window.gtag = (...args: unknown[]) => {
-      window.dataLayer?.push(args);
-    };
-    window.gtag("js", new Date());
-    window.gtag("config", measurementId, { anonymize_ip: true });
 
     const trackOutboundClick = (event: MouseEvent) => {
       const target = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>("a[data-analytics-link]") : null;
@@ -50,7 +38,6 @@ export default function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps)
     document.addEventListener("click", trackOutboundClick);
     return () => {
       document.removeEventListener("click", trackOutboundClick);
-      script.remove();
     };
   }, [measurementId]);
 
