@@ -3,6 +3,18 @@ import { Geist, Geist_Mono } from "next/font/google";
 import GoogleAnalytics from "./google-analytics";
 import "./globals.css";
 
+const googleAnalyticsMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const googleAnalyticsEnabled = /^G-[A-Z0-9]+$/.test(googleAnalyticsMeasurementId ?? "");
+
+const googleAnalyticsSnippet = googleAnalyticsEnabled
+  ? `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${googleAnalyticsMeasurementId}', { anonymize_ip: true });
+    `
+  : "";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -49,11 +61,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      {googleAnalyticsEnabled && (
+        <head>
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsMeasurementId}`} />
+          <script dangerouslySetInnerHTML={{ __html: googleAnalyticsSnippet }} />
+        </head>
+      )}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        <GoogleAnalytics measurementId={googleAnalyticsMeasurementId} />
       </body>
     </html>
   );

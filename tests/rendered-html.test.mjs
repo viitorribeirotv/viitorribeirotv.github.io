@@ -46,4 +46,11 @@ test("renderiza o site pessoal completo", async () => {
   assert.match(html, /href="\/favicon\.png"/);
   assert.match(html, /href="\/apple-touch-icon\.png"/);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|Your site is taking shape/i);
+
+  const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+  if (measurementId) {
+    assert.match(html, new RegExp(`https://www\\.googletagmanager\\.com/gtag/js\\?id=${measurementId}`));
+    assert.match(html, /function gtag\(\)\{dataLayer\.push\(arguments\);\}/);
+    assert.match(html, new RegExp(`gtag\\('config', '${measurementId}'`));
+  }
 });
