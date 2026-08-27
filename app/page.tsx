@@ -4,7 +4,7 @@ const featuredChannels = [
     title: "YouTube",
     description: "Gameplays, análises, primeiras impressões e vídeos para assistir no seu ritmo.",
     detail: "Vídeos & reviews",
-    href: "https://youtube.com/@viitorribeirotv?sub_confirmation=1",
+    href: "https://www.youtube.com/@viitorribeirotv?sub_confirmation=1",
     className: "youtube",
   },
   {
@@ -34,7 +34,7 @@ const featuredChannels = [
 ];
 
 const allLinks = [
-  { short: "YT", label: "YouTube", detail: "Vídeos e reviews", href: "https://youtube.com/@viitorribeirotv?sub_confirmation=1" },
+  { short: "YT", label: "YouTube", detail: "Vídeos e reviews", href: "https://www.youtube.com/@viitorribeirotv?sub_confirmation=1" },
   { short: "TW", label: "Twitch", detail: "Lives e comunidade", href: "https://www.twitch.tv/viitorribeirotv" },
   { short: "K", label: "Kick", detail: "Transmissões ao vivo", href: "https://kick.com/viitorribeirotv" },
   { short: "IG", label: "Instagram", detail: "Bastidores e novidades", href: "https://www.instagram.com/viitorribeirotv" },
@@ -55,7 +55,7 @@ export default function Home() {
             <a href="#sobre">Sobre</a>
             <a href="#conteudo">Conteúdo</a>
             <a href="#links">Links</a>
-            <a href="#parcerias">Parcerias</a>
+            <a href="#parceria">Parceria</a>
           </nav>
           <a className="header-cta" href="#links">
             Todos os links <span aria-hidden="true">↗</span>
@@ -72,7 +72,7 @@ export default function Home() {
             Gameplay, reviews e lives com opinião de verdade — um espaço para quem vive games dentro e fora da tela.
           </p>
           <div className="hero-actions">
-            <a className="primary-action" href="https://youtube.com/@viitorribeirotv?sub_confirmation=1" target="_blank" rel="noreferrer" data-analytics-link="youtube" data-analytics-location="hero">
+            <a className="primary-action" href="https://www.youtube.com/@viitorribeirotv?sub_confirmation=1" target="_blank" rel="noreferrer" data-analytics-link="youtube" data-analytics-location="hero">
               Assistir no YouTube <span aria-hidden="true">↗</span>
             </a>
             <a className="text-action" href="#sobre">Conheça o Vitor <span aria-hidden="true">↓</span></a>
@@ -160,9 +160,57 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="business-section section-shell" id="parcerias">
+      <section className="partner-section" id="parceria">
+        <div className="section-shell partner-shell">
+          <div className="partner-copy">
+            <div className="section-label"><span>04</span> Benefício da comunidade</div>
+            <p className="kicker">Parceiro oficial</p>
+            <h2>Mais foco no jogo. Menos no preço.</h2>
+            <p className="partner-description">
+              A Overclock faz parte das marcas parceiras do viitorribeirotv. Pelo link oficial da parceria,
+              você garante 10% de desconto e ainda apoia o conteúdo do canal.
+            </p>
+
+            <div className="coupon-panel" aria-label="Cupom de 10% de desconto na Overclock">
+              <span>Use o cupom</span>
+              <strong>VIITORRIBEIROTV</strong>
+              <small>10% OFF na sua compra</small>
+            </div>
+
+            <a
+              className="primary-action partner-action"
+              href="https://bebaoverclock.com.br/discount/viitorribeirotv"
+              target="_blank"
+              rel="sponsored noreferrer"
+              data-analytics-link="overclock"
+              data-analytics-location="parceria"
+            >
+              Usar meu cupom <span aria-hidden="true">↗</span>
+            </a>
+            <p className="partner-disclosure">
+              Link de parceria. O desconto segue as condições vigentes da loja.
+            </p>
+          </div>
+
+          <div className="partner-media">
+            <div className="partner-badge"><span /> Parceria oficial</div>
+            {/* A imagem permanece nativa para funcionar sem otimizador de servidor no GitHub Pages. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/parceria-overclock.png"
+              alt="Vitor Ribeiro com Overclock 2.0 e cupom VIITORRIBEIROTV de 10% de desconto"
+              width="945"
+              height="945"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="business-section section-shell" id="contato">
         <div className="business-intro">
-          <div className="section-label"><span>04</span> Parcerias e trabalhos</div>
+          <div className="section-label"><span>05</span> Parcerias e trabalhos</div>
           <p className="kicker">Vamos conversar?</p>
           <h2>Seu projeto pode ganhar uma nova fase.</h2>
         </div>
