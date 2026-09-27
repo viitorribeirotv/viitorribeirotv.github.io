@@ -26,16 +26,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "viitorribeirotv | Gameplay, Reviews e Lives",
+  title: "viitorribeirotv",
   description: "O universo gamer de Vitor Ribeiro: gameplays, reviews, lives e conteúdo com opinião de verdade.",
   metadataBase: new URL("https://viitorribeirotv.github.io"),
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.png", type: "image/png", sizes: "512x512" },
+      { url: "/favicon-tv-v2.ico", sizes: "16x16 32x32 48x48 64x64 128x128 256x256" },
+      { url: "/favicon-tv-v2.png", type: "image/png", sizes: "512x512" },
     ],
-    shortcut: "/favicon.ico",
-    apple: [{ url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" }],
+    shortcut: "/favicon-tv-v2.ico",
+    apple: [{ url: "/apple-touch-icon-tv-v2.png", type: "image/png", sizes: "180x180" }],
   },
   openGraph: {
     title: "viitorribeirotv | Gameplay, Reviews e Lives",

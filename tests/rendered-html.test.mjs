@@ -29,7 +29,7 @@ test("renderiza o site pessoal completo", async () => {
 
   const html = await response.text();
   assert.match(html, /<html lang="pt-BR">/i);
-  assert.match(html, /<title>viitorribeirotv \| Gameplay, Reviews e Lives<\/title>/i);
+  assert.match(html, /<title>viitorribeirotv<\/title>/i);
   assert.match(html, /Jogar é só/);
   assert.match(html, /Prazer, eu sou o Vitor/);
   assert.match(html, /Conteúdo para cada momento/);
@@ -42,9 +42,10 @@ test("renderiza o site pessoal completo", async () => {
   assert.match(html, /mailto:vitor\.a\.trevisani@gmail\.com/);
   assert.match(html, /vitor\.a\.trevisani@gmail\.com/);
   assert.match(html, /https:\/\/viitorribeirotv\.github\.io\/og\.png/);
-  assert.match(html, /href="\/favicon\.ico"/);
-  assert.match(html, /href="\/favicon\.png"/);
-  assert.match(html, /href="\/apple-touch-icon\.png"/);
+  assert.match(html, /href="\/favicon-tv-v2\.ico"/);
+  assert.match(html, /href="\/favicon-tv-v2\.png"/);
+  assert.match(html, /href="\/apple-touch-icon-tv-v2\.png"/);
+  assert.doesNotMatch(html, /href="\/favicon\.(?:ico|png)"/);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|Your site is taking shape/i);
 
   const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
