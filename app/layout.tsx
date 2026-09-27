@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "viitorribeirotv",
     locale: "pt_BR",
     type: "website",
-    images: [{ url: "/og.png", width: 1536, height: 1024, alt: "viitorribeirotv — Gameplay, Reviews e Lives" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Vitor Ribeiro — viitorribeirotv, Gameplay, Reviews e Lives" }],
   },
   twitter: {
     card: "summary_large_image",

@@ -77,7 +77,16 @@ export default function Home() {
             </a>
             <a className="text-action" href="#sobre">Conheça o Vitor <span aria-hidden="true">↓</span></a>
           </div>
+          <dl className="content-schedule" aria-label="Frequência de conteúdo">
+            <div><dt>Vídeos</dt><dd>Toda semana</dd></div>
+            <div><dt>Lives</dt><dd>Toda semana</dd></div>
+            <div><dt>Shorts</dt><dd>Diariamente</dd></div>
+          </dl>
         </div>
+
+        {/* A foto original fica em uma camada separada, sem filtros de cor. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className="hero-portrait" src="/images/vitor-pro-player.webp" alt="Vitor Ribeiro de braços cruzados, com sua camisa gamer" width="1224" height="1224" fetchPriority="high" />
 
         <div className="hero-rail" aria-label="Tipos de conteúdo">
           <span>Gameplay</span><i />
@@ -99,8 +108,8 @@ export default function Home() {
             <div className="portrait-glow" aria-hidden="true" />
             {/* A imagem permanece nativa para funcionar sem otimizador de servidor no GitHub Pages. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/avatar-viitor.png" alt="Retrato ilustrado de Vitor Ribeiro" width="1024" height="1024" />
-            <div className="portrait-tag"><span>●</span> Online no universo gamer</div>
+            <img src="/images/avatar-vitor-natural.webp" alt="Foto de Vitor Ribeiro de braços cruzados" width="900" height="900" loading="lazy" />
+            <div className="portrait-tag"><span>●</span> viitorribeirotv · PC & PS5</div>
           </div>
           <div className="about-copy">
             <p className="kicker">Prazer, eu sou o Vitor.</p>
