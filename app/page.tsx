@@ -2,6 +2,7 @@ const featuredChannels = [
   {
     number: "01",
     title: "YouTube",
+    short: "YT",
     description: "Gameplays, análises, primeiras impressões e vídeos para assistir no seu ritmo.",
     detail: "Vídeos & reviews",
     href: "https://youtube.com/@viitorribeirotv?sub_confirmation=1",
@@ -10,6 +11,7 @@ const featuredChannels = [
   {
     number: "02",
     title: "Twitch",
+    short: "TW",
     description: "Lives para acompanhar cada partida, trocar ideia no chat e fazer parte da comunidade.",
     detail: "Lives & comunidade",
     href: "https://www.twitch.tv/viitorribeirotv",
@@ -18,6 +20,7 @@ const featuredChannels = [
   {
     number: "03",
     title: "Kick",
+    short: "K",
     description: "Mais um ponto de encontro ao vivo para gameplay, conversa e muita resenha gamer.",
     detail: "Ao vivo & sem cortes",
     href: "https://kick.com/viitorribeirotv",
@@ -26,10 +29,20 @@ const featuredChannels = [
   {
     number: "04",
     title: "Instagram",
+    short: "IG",
     description: "Bastidores, novidades e momentos do dia a dia para acompanhar de perto.",
     detail: "Bastidores & novidades",
     href: "https://www.instagram.com/viitorribeirotv",
     className: "instagram",
+  },
+  {
+    number: "05",
+    title: "TikTok",
+    short: "TK",
+    description: "Cortes, highlights e momentos das partidas para acompanhar em vídeos rápidos.",
+    detail: "Cortes & highlights",
+    href: "https://www.tiktok.com/@viitorribeirotv",
+    className: "tiktok",
   },
 ];
 
@@ -142,7 +155,7 @@ export default function Home() {
             {featuredChannels.map((channel) => (
               <a className={`channel-card ${channel.className}`} key={channel.title} href={channel.href} target="_blank" rel="noreferrer" data-analytics-link={channel.title.toLowerCase()} data-analytics-location="destaques">
                 <div className="card-top"><span>{channel.number}</span><span aria-hidden="true">↗</span></div>
-                <div className="platform-mark">{channel.title.slice(0, 2).toUpperCase()}</div>
+                <div className="platform-mark">{channel.short}</div>
                 <h3>{channel.title}</h3>
                 <p>{channel.description}</p>
                 <div className="card-detail"><i /> {channel.detail}</div>

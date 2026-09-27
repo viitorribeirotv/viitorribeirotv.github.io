@@ -194,8 +194,10 @@ h2 { margin: 0; font-weight: 750; font-size: clamp(42px, 5.2vw, 72px); line-heig
 .content-section { padding-block: clamp(92px, 11vw, 150px); background: #09131c; border-block: 1px solid rgba(255,255,255,.08); }
 .section-heading { display: grid; grid-template-columns: .45fr 1fr; gap: 40px; align-items: end; }
 .section-heading h2 { max-width: 760px; }
-.channel-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 62px; }
+.channel-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 62px; }
 .channel-card {
+  flex: 0 0 calc((100% - 32px) / 3);
+  min-width: 0;
   position: relative;
   min-height: 440px;
   padding: 25px;
@@ -277,8 +279,7 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
 @media (min-width: 901px) and (max-width: 1150px) {
   .hero-portrait { right: -5%; width: 56vw; }
   .hero-copy { max-width: 420px; }
-  .channel-grid { grid-template-columns: repeat(2, 1fr); }
-  .channel-card { min-height: 370px; }
+  .channel-card { flex-basis: calc((100% - 16px) / 2); min-height: 370px; }
 }
 
 @media (max-width: 900px) {
@@ -293,8 +294,7 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
   .about-grid { max-width: 700px; margin-inline: auto; }
   .portrait-wrap { max-width: 480px; }
   .section-heading { grid-template-columns: 1fr; }
-  .channel-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .channel-card { min-height: 350px; }
+  .channel-card { flex-basis: calc((100% - 16px) / 2); min-height: 350px; }
   .platform-mark { margin-top: 35px; }
   .link-intro { position: static; }
   .link-intro .kicker { margin-top: 42px; }
@@ -327,8 +327,7 @@ a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
   .copy-columns { grid-template-columns: 1fr; gap: 6px; }
   .portrait-tag { left: 0; }
   .portrait-wrap::before { inset: 4% 0 -3% 4%; transform: none; }
-  .channel-card { min-height: 330px; }
-  .channel-grid { grid-template-columns: 1fr; }
+  .channel-card { flex-basis: 100%; min-height: 330px; }
   .link-list > a { grid-template-columns: 54px 1fr auto; }
   .footer-bottom { grid-template-columns: 1fr; gap: 14px; }
   .footer-bottom, .footer-bottom p, .footer-bottom p:last-child { text-align: center; }
