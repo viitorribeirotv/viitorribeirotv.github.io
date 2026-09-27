@@ -38,6 +38,7 @@ const allLinks = [
   { short: "TW", label: "Twitch", detail: "Lives e comunidade", href: "https://www.twitch.tv/viitorribeirotv" },
   { short: "K", label: "Kick", detail: "Transmissões ao vivo", href: "https://kick.com/viitorribeirotv" },
   { short: "IG", label: "Instagram", detail: "Bastidores e novidades", href: "https://www.instagram.com/viitorribeirotv" },
+  { short: "TK", label: "TikTok", detail: "Cortes e momentos das partidas", href: "https://www.tiktok.com/@viitorribeirotv" },
   { short: "DS", label: "Discord", detail: "Entre para a comunidade", href: "https://discord.gg/xHYPKqxTTW" },
   { short: "LP", label: "Apoie a live", detail: "Contribua pelo LivePix", href: "https://livepix.gg/viitorribeirotv" },
 ];
